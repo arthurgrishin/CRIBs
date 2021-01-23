@@ -5,6 +5,7 @@
 //  Created by Arthur Grishin on 23/1/21.
 //
 
+import Foundation
 import Combine
 
 open class Workflow<ActionableItemType> {
