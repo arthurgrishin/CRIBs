@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'CRIBs/*.swift', 'CRIBs/**/*.swift'
 
-  s.frameworks = 'Combine'
+  s.frameworks = ['Combine', 'SwiftUI']
   s.module_name = 'CRIBs'
 end

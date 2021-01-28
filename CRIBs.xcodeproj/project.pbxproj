@@ -15,7 +15,6 @@
 		051523F025BBBCE400F20FD7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523E625BBBCE400F20FD7 /* Router.swift */; };
 		051523F125BBBCE400F20FD7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523E725BBBCE400F20FD7 /* Interactor.swift */; };
 		051523F225BBBCE400F20FD7 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523E825BBBCE400F20FD7 /* RootRouter.swift */; };
-		051523F325BBBCE400F20FD7 /* ViewControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523E925BBBCE400F20FD7 /* ViewControllable.swift */; };
 		051523F425BBBCE400F20FD7 /* PresentableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523EA25BBBCE400F20FD7 /* PresentableInteractor.swift */; };
 		051523F525BBBCE400F20FD7 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523EB25BBBCE400F20FD7 /* Builder.swift */; };
 		051523F625BBBCE400F20FD7 /* ViewableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051523EC25BBBCE400F20FD7 /* ViewableRouter.swift */; };
@@ -23,6 +22,7 @@
 		05ACF4AE25BBCC6800EBD7BF /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACF4AD25BBCC6800EBD7BF /* RootRouterTests.swift */; };
 		05B74ABF25BC006A00FD4F54 /* Workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056A34B225BBD5D400E6BCA0 /* Workflow.swift */; };
 		05B74AC225BC6E0100FD4F54 /* WorkflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC5E2125BBD39A00F6DEBA /* WorkflowTests.swift */; };
+		05F02BBB25C2BD720088E4FC /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F02BBA25C2BD720088E4FC /* Viewable.swift */; };
 		05F6294625BBC11100EE3E45 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6294525BBC11100EE3E45 /* RouterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		051523E625BBBCE400F20FD7 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		051523E725BBBCE400F20FD7 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		051523E825BBBCE400F20FD7 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		051523E925BBBCE400F20FD7 /* ViewControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllable.swift; sourceTree = "<group>"; };
 		051523EA25BBBCE400F20FD7 /* PresentableInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableInteractor.swift; sourceTree = "<group>"; };
 		051523EB25BBBCE400F20FD7 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		051523EC25BBBCE400F20FD7 /* ViewableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewableRouter.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		056A34B225BBD5D400E6BCA0 /* Workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workflow.swift; sourceTree = "<group>"; };
 		05ACF4AD25BBCC6800EBD7BF /* RootRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
 		05DC5E2125BBD39A00F6DEBA /* WorkflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowTests.swift; sourceTree = "<group>"; };
+		05F02BBA25C2BD720088E4FC /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		05F6294525BBC11100EE3E45 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 				051523E825BBBCE400F20FD7 /* RootRouter.swift */,
 				051523E625BBBCE400F20FD7 /* Router.swift */,
 				051523EC25BBBCE400F20FD7 /* ViewableRouter.swift */,
-				051523E925BBBCE400F20FD7 /* ViewControllable.swift */,
+				05F02BBA25C2BD720088E4FC /* Viewable.swift */,
 				056A34B125BBD5C900E6BCA0 /* Workflow */,
 				051523C925BBBC4D00F20FD7 /* CRIBs.h */,
 				051523CA25BBBC4D00F20FD7 /* Info.plist */,
@@ -262,10 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051523F325BBBCE400F20FD7 /* ViewControllable.swift in Sources */,
 				051523F025BBBCE400F20FD7 /* Router.swift in Sources */,
 				05B74ABF25BC006A00FD4F54 /* Workflow.swift in Sources */,
 				051523EF25BBBCE400F20FD7 /* Presenter.swift in Sources */,
+				05F02BBB25C2BD720088E4FC /* Viewable.swift in Sources */,
 				051523F125BBBCE400F20FD7 /* Interactor.swift in Sources */,
 				051523ED25BBBCE400F20FD7 /* Dependency.swift in Sources */,
 				051523F625BBBCE400F20FD7 /* ViewableRouter.swift in Sources */,

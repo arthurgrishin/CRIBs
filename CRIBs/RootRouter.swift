@@ -5,7 +5,7 @@
 //  Created by Arthur Grishin on 26/11/20.
 //
 
-import UIKit
+import SwiftUI
 
 /// The root `Router` of an application.
 public protocol RootRouting: ViewableRouting {
@@ -17,21 +17,21 @@ public protocol RootRouting: ViewableRouting {
 }
 
 /// The application root router base class, that acts as the root of the router tree.
-open class RootRouter<DependencyType, InteractorType, ViewControllerType>: ViewableRouter<DependencyType, InteractorType, ViewControllerType>, RootRouting {
+open class RootRouter<DependencyType, InteractorType, ViewType: Viewable>: ViewableRouter<DependencyType, InteractorType, ViewType>, RootRouting {
 
     /// Initializer.
     ///
     /// - parameter interactor: The corresponding `Interactor` of this `Router`.
     /// - parameter viewController: The corresponding `ViewController` of this `Router`.
-    public override init(dependency: DependencyType, interactor: InteractorType, viewController: ViewControllerType) {
-        super.init(dependency: dependency, interactor: interactor, viewController: viewController)
+    public override init(dependency: DependencyType, interactor: InteractorType, view: ViewType) {
+        super.init(dependency: dependency, interactor: interactor, view: view)
     }
 
     /// Launches the router tree.
     ///
     /// - parameter window: The window to launch the router tree in.
     public final func launch(from window: UIWindow) {
-        window.rootViewController = viewControllable.uiviewController
+        window.rootViewController = UIHostingController(rootView: view)
         window.makeKeyAndVisible()
 
         interactable.activate()
